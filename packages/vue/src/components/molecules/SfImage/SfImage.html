@@ -7,7 +7,7 @@
   </transition>
   <img ref="img" loading="lazy" class="sf-image__img lozad" v-if="src" />
   <picture ref="picture" loading="lazy" class="sf-image__img" v-else-if="images && images.length">
-    <source ref="pictureSmall" media="(max-width: 767px)">
+    <source srcset="pictures[0].normal.url" media="(max-width: 767px)">
     <source ref="pictureNormal" media="(min-width: 768px)">
   </picture>
 </div>
